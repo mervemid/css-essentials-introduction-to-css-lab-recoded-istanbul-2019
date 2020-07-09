@@ -49,10 +49,10 @@ RSpec.describe 'styling' do
       selector = parsed_css.find_by_selector('div')[0]
       expect(selector).to include('background: white;'), "Missing properly formatted background declaration"
     end
-    it 'sets div padding to 30px' do
+   it 'sets div padding to 30px' do
       selector = parsed_css.find_by_selector('div')[0]
       expect(selector).to include('padding: 30px;'), "Missing properly formatted padding declaration"
-    end
+    end 
     # 
     it 'sets #main-header font size to 22px' do
       selector = parsed_css.find_by_selector('#main-header')[0]
